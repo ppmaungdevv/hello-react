@@ -2,6 +2,7 @@
 import './App.css';
 import GreetFunc from "./components/GreetFunc";
 import GreetCl from "./components/GreetCl";
+import HelloJSX from './components/HelloJSX'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header> */}
       <GreetFunc />
       <GreetCl />
+      <HelloJSX />
     </div>
   );
 }
