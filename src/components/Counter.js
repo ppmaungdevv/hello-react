@@ -1,0 +1,32 @@
+import React, { Component } from 'react'
+
+class Counter extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            count: 0
+        }
+    }
+    increase() {
+        this.setState({
+            count: this.state.count + 1
+        }, () => {
+            console.log('callback', this.state.count)
+        })
+        console.log(this.state.count)
+    }
+  render() {
+    return (
+      <div>
+          <div>Counter {this.state.count}</div>
+          <button onClick={() => this.increase()}>Increase</button>
+      </div>
+    )
+  }
+}
+
+export default Counter
+
+// don't update state directly
+// if need to use updated state, use it within setState({}, callback() => {}) callback part
