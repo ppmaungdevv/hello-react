@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-// import GreetFunc from "./components/GreetFunc";
-// import GreetCl from "./components/GreetCl";
+import GreetFunc from "./components/GreetFunc"
+import GreetCl from "./components/GreetCl"
 // import HelloJSX from './components/HelloJSX'
 // import Message from './components/Message'
-import Counter from './components/Counter';
+import Counter from './components/Counter'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         {/* <Message /> */}
-        {/* <GreetFunc name="Pyae" > 
+        <GreetFunc name="Pyae" > 
           <p>Welcome to React</p>
           <p>This function component</p>
         </GreetFunc>
@@ -21,7 +21,7 @@ function App() {
           <p>Welcome to React</p>
           <p>This is class Component</p>
         </GreetCl>
-        <HelloJSX /> */}
+        {/* <HelloJSX /> */}
       </header>
     </div>
   );
