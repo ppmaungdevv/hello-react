@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import EventBind from './components/EventBind';
+import UserGreeting from './components/UserGreeting';
+// import ParentComponent from './components/ParentComponent';
+// import EventBind from './components/EventBind';
 // import GreetFunc from "./components/GreetFunc"
 // import GreetCl from "./components/GreetCl"
 // import HelloJSX from './components/HelloJSX'
@@ -14,7 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <EventBind />
+        {/* <ParentComponent /> */}
+        {/* <EventBind /> */}
         {/* <ClickFunc /> */}
         {/* <ClickCl /> */}
         {/* <Counter /> */}
@@ -28,6 +31,7 @@ function App() {
           <p>This is class Component</p>
         </GreetCl> */}
         {/* <HelloJSX /> */}
+        <UserGreeting />
       </header>
     </div>
   );
