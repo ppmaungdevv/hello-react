@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import StyleSheet from './components/StyleSheet';
+import InlineStyle from './components/InlineStyle';
 // import UserGreeting from './components/UserGreeting';  
-import NameList from './components/NameList';
+// import NameList from './components/NameList';
 // import ParentComponent from './components/ParentComponent';
 // import EventBind from './components/EventBind';
 // import GreetFunc from "./components/GreetFunc"
@@ -11,13 +13,19 @@ import NameList from './components/NameList';
 // import Counter from './components/Counter'
 // import ClickFunc from './components/ClickFunc';
 // import ClickCl from './components/ClickCl';
+import './style/normalStyle.css'
+import mod_style from './style/modStyle.module.css' // module css only works when imported
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <NameList/>
+        <h1 className='error'>Normal Style</h1>
+        <h2 className={mod_style.success}>Mod Style</h2>
+        <StyleSheet primary={true} />
+        <InlineStyle />
+        {/* <NameList/> */}
         {/* <ParentComponent /> */}
         {/* <EventBind /> */}
         {/* <ClickFunc /> */}
