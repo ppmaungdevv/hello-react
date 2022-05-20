@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import UserGreeting from './components/UserGreeting';
+// import UserGreeting from './components/UserGreeting';  
+import NameList from './components/NameList';
 // import ParentComponent from './components/ParentComponent';
 // import EventBind from './components/EventBind';
 // import GreetFunc from "./components/GreetFunc"
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <NameList/>
         {/* <ParentComponent /> */}
         {/* <EventBind /> */}
         {/* <ClickFunc /> */}
@@ -31,7 +33,7 @@ function App() {
           <p>This is class Component</p>
         </GreetCl> */}
         {/* <HelloJSX /> */}
-        <UserGreeting />
+        {/* <UserGreeting /> */}
       </header>
     </div>
   );
