@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import StyleSheet from './components/StyleSheet';
-import InlineStyle from './components/InlineStyle';
+import LifeCycleMounting from './components/LifeCycleMounting';
+// import Form from './components/Form';
+// import StyleSheet from './components/StyleSheet';
+// import InlineStyle from './components/InlineStyle';
 // import UserGreeting from './components/UserGreeting';  
 // import NameList from './components/NameList';
 // import ParentComponent from './components/ParentComponent';
@@ -13,18 +15,20 @@ import InlineStyle from './components/InlineStyle';
 // import Counter from './components/Counter'
 // import ClickFunc from './components/ClickFunc';
 // import ClickCl from './components/ClickCl';
-import './style/normalStyle.css'
-import mod_style from './style/modStyle.module.css' // module css only works when imported
+// import './style/normalStyle.css'
+// import mod_style from './style/modStyle.module.css' // module css only works for the imported files
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className='error'>Normal Style</h1>
+        <LifeCycleMounting />
+        {/* <Form/> */}
+        {/* <h1 className='error'>Normal Style</h1>
         <h2 className={mod_style.success}>Mod Style</h2>
         <StyleSheet primary={true} />
-        <InlineStyle />
+        <InlineStyle /> */}
         {/* <NameList/> */}
         {/* <ParentComponent /> */}
         {/* <EventBind /> */}
