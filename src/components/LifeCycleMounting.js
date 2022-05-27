@@ -11,7 +11,7 @@ class LifeCycleMounting extends Component {
       console.log('1. constructor')
     }
 
-    static getDerivedStateFromProps(props, state) { // rarely used
+    static getDerivedStateFromProps(props, state) { // rarely used // both mount and updated life cycle
         console.log('2. derived FP')
         return null
     }
@@ -20,9 +20,30 @@ class LifeCycleMounting extends Component {
         console.log('4. did mount')
     }
 
-  render() {
+    shouldComponentUpdate() {
+      console.log('should comp update') // update lifcycle
+      return true
+    }
+
+    getSnapshotBeforeUpdate() {
+      console.log('get snap before update')
+      return null
+    }
+
+    componentDidUpdate() {
+      console.log('comp did update')
+    }
+
+    changeName = () => {
+      this.setState({
+        name: 'PPM2'
+      })
+    }
+
+  render() { // mount and update
     return (
         <div>
+          <button onClick={this.changeName}>Click</button><br/>
           3. LifeCycleMounting
             <LifeCycleMountingChild/>
         </div>
@@ -31,3 +52,7 @@ class LifeCycleMounting extends Component {
 }
 
 export default LifeCycleMounting
+
+// to trigger update life cycle, need to change either props or state
+// there are two more in lifecycle => unmount and error handling 
+// don't setState in unmount
