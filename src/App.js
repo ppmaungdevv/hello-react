@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import LifeCycleMounting from './components/LifeCycleMounting';
+// import LifeCycleMounting from './components/LifeCycleMounting';
+import ParentForRegAndPure from './components/ParentForRegAndPure';
 // import Form from './components/Form';
 // import StyleSheet from './components/StyleSheet';
 // import InlineStyle from './components/InlineStyle';
@@ -23,7 +24,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <LifeCycleMounting />
+        <ParentForRegAndPure/>
+        {/* <LifeCycleMounting /> */}
         {/* <Form/> */}
         {/* <h1 className='error'>Normal Style</h1>
         <h2 className={mod_style.success}>Mod Style</h2>
