@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import InputParent from './components/InputParent';
+import ForwardRefsParent from './components/ForwardRefsParent';
+// import InputParent from './components/InputParent';
 // import LifeCycleMounting from './components/LifeCycleMounting';
 // import ParentForRegAndPure from './components/ParentForRegAndPure';
 // import RefsDemo from './components/RefsDemo';
@@ -26,7 +27,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <InputParent />
+        <ForwardRefsParent />
+        {/* <InputParent /> */}
         {/* <RefsDemo /> */}
         {/* <ParentForRegAndPure/> */}
         {/* <LifeCycleMounting /> */}
