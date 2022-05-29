@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import InputParent from './components/InputParent';
 // import LifeCycleMounting from './components/LifeCycleMounting';
 // import ParentForRegAndPure from './components/ParentForRegAndPure';
-import RefsDemo from './components/RefsDemo';
+// import RefsDemo from './components/RefsDemo';
 // import Form from './components/Form';
 // import StyleSheet from './components/StyleSheet';
 // import InlineStyle from './components/InlineStyle';
@@ -25,7 +26,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <RefsDemo />
+        <InputParent />
+        {/* <RefsDemo /> */}
         {/* <ParentForRegAndPure/> */}
         {/* <LifeCycleMounting /> */}
         {/* <Form/> */}
