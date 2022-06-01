@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ForwardRefsParent from './components/ForwardRefsParent';
+// import ForwardRefsParent from './components/ForwardRefsParent';
+import PortalDemo from './components/PortalDemo';
 // import InputParent from './components/InputParent';
 // import LifeCycleMounting from './components/LifeCycleMounting';
 // import ParentForRegAndPure from './components/ParentForRegAndPure';
@@ -27,7 +28,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ForwardRefsParent />
+        {/* <ForwardRefsParent /> */}
+        <PortalDemo/>
         {/* <InputParent /> */}
         {/* <RefsDemo /> */}
         {/* <ParentForRegAndPure/> */}
