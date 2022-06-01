@@ -1,28 +1,38 @@
 import React, { Component } from 'react'
+import withCounter from "./HOC/withCounter";
 
 class ClickCounter extends Component {
-    constructor(props) {
-      super(props)
+    // constructor(props) {
+    //   super(props)
     
-      this.state = {
-         counter: 0
-      }
-    }
-    increaseCount = () => {
-        this.setState(prevState => {
-            return { counter: prevState.counter + 1 }
-        })
-    }
+    //   this.state = {
+    //      counter: 0
+    //   }
+    // }
+    // increaseCount = () => {
+    //     this.setState(prevState => {
+    //         return { counter: prevState.counter + 1 }
+    //     })
+    // }
   render() {
-      const {counter} = this.state
+    //   const {counter} = this.state
+    const { counter, increaseCount } = this.props
     return (
       <div>
-          <button onClick={this.increaseCount}>Clicked {counter} times</button>
+                {/* {this.props.name}  */}
+                {/* this.props.name get from HOC */}
+          {/* <button onClick={this.increaseCount}>
+              Clicked {counter} times
+            </button> */}
+            <button onClick={increaseCount} >Clicked {counter} times</button>
       </div>
     )
   }
 }
 
-export default ClickCounter
+export default withCounter(ClickCounter) // using the HOC
 
-// we are duplicating the code, in HoverComponent, not re-using functionality (increaseCount)
+// we are duplicating the code, in HoverComponent, not re-using functionality (increaseCount) without HOC
+
+// by using HOC common methods, states,... can passed down with props
+// but states are separated for each component
