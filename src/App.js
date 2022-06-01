@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 // import ForwardRefsParent from './components/ForwardRefsParent';
-import PortalDemo from './components/PortalDemo';
+// import PortalDemo from './components/PortalDemo';
 // import InputParent from './components/InputParent';
 // import LifeCycleMounting from './components/LifeCycleMounting';
 // import ParentForRegAndPure from './components/ParentForRegAndPure';
@@ -28,8 +30,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <ErrorBoundary>
+          <Hero name='Flash' />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero name='Zoom' />
+        </ErrorBoundary>
         {/* <ForwardRefsParent /> */}
-        <PortalDemo/>
+        {/* <PortalDemo/> */}
         {/* <InputParent /> */}
         {/* <RefsDemo /> */}
         {/* <ParentForRegAndPure/> */}
