@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverComponent from './components/HoverComponent';
+// import ClickCounter from './components/ClickCounter';
+// import HoverComponent from './components/HoverComponent';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverComponent2 from './components/HoverComponent2';
+import User from './components/User';
+import CounterPropsRender from './components/CounterPropsRender';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
 // import ForwardRefsParent from './components/ForwardRefsParent';
@@ -32,8 +36,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ClickCounter fromApp='passProps' />
-        <HoverComponent />
+        <CounterPropsRender render={(counter, increaseCount) => <ClickCounter2 counter={counter} increaseCount={increaseCount} /> } />
+        <CounterPropsRender render={(counter, increaseCount) => <HoverComponent2 counter={counter} increaseCount={increaseCount} /> } />
+        {/* <ClickCounter2 />
+        <HoverComponent2 /> 
+        <User name={(is_logged_in) => is_logged_in ? 'Clark' : 'Superman'} render={(is_logged_in) => is_logged_in ? 'Clark' : 'Superman'} /> */}
+        {/* <ClickCounter fromApp='passProps' />
+        <HoverComponent /> */}
         {/* <ErrorBoundary>
           <Hero name='Flash' />
         </ErrorBoundary>
