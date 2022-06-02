@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <ClickCounter />
+        <ClickCounter fromApp='passProps' />
         <HoverComponent />
         {/* <ErrorBoundary>
           <Hero name='Flash' />

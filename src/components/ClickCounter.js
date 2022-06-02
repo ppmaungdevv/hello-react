@@ -24,13 +24,13 @@ class ClickCounter extends Component {
           {/* <button onClick={this.increaseCount}>
               Clicked {counter} times
             </button> */}
-            <button onClick={increaseCount} >Clicked {counter} times</button>
+            <button onClick={increaseCount} > {this.props.fromApp} Clicked {counter} times</button>
       </div>
     )
   }
 }
 
-export default withCounter(ClickCounter) // using the HOC
+export default withCounter(ClickCounter, 2) // using the HOC
 
 // we are duplicating the code, in HoverComponent, not re-using functionality (increaseCount) without HOC
 
