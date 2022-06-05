@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import ComponentC from './components/ContextComponents/ComponentC';
-import { UserProvider } from './components/ContextComponents/userContext';
+import PostsList from './components/WorkingWithAPIs/PostsList';
+// import ComponentC from './components/ContextComponents/ComponentC';
+// import { UserProvider } from './components/ContextComponents/userContext';
 // import ClickCounter from './components/ClickCounter';
 // import HoverComponent from './components/HoverComponent';
 // import ClickCounter2 from './components/ClickCounter2';
@@ -38,9 +39,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <UserProvider value='Pyae' >
+        <PostsList />
+        {/* <UserProvider value='Pyae' >
           <ComponentC />
-        </UserProvider>
+        </UserProvider> */}
         {/* <CounterPropsRender render={(counter, increaseCount) => <ClickCounter2 counter={counter} increaseCount={increaseCount} /> } />
         <CounterPropsRender render={(counter, increaseCount) => <HoverComponent2 counter={counter} increaseCount={increaseCount} /> } /> */}
         {/* <ClickCounter2 />
