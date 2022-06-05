@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import PostsList from './components/WorkingWithAPIs/PostsList';
+import PostForm from './components/WorkingWithAPIs/PostForm';
+// import PostsList from './components/WorkingWithAPIs/PostsList';
 // import ComponentC from './components/ContextComponents/ComponentC';
 // import { UserProvider } from './components/ContextComponents/userContext';
 // import ClickCounter from './components/ClickCounter';
@@ -38,8 +39,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <PostsList />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <PostForm />
+        {/* <PostsList /> */}
         {/* <UserProvider value='Pyae' >
           <ComponentC />
         </UserProvider> */}

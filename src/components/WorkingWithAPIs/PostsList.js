@@ -11,7 +11,7 @@ class PostsList extends Component {
       }
     }
     fetchData = () => {
-        axios.get('https://jsonplaceholder.typicode.com/posts1')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(({data}) => {
                 this.setState({posts: data})
             })
